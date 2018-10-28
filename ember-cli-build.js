@@ -4,7 +4,28 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    'ember-bootstrap': {
+      'bootstrapVersion': 4,
+      'importBootstrapFont': false,
+      'importBootstrapCSS': false,
+      whitelist: [
+        // 'bs-accordion',
+        // 'bs-alert',
+        // 'bs-button',
+        // 'bs-button-group'
+        // 'bs-carousel',
+        // 'bs-collapse',
+        // 'bs-dropdown',
+        // 'bs-form',
+        // 'bs-modal',
+        // 'bs-navbar',
+        // 'bs-nav',
+        // 'bs-popover',
+        // 'bs-progress',
+        // 'bs-tabs',
+        // 'bs-tooltip'
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
